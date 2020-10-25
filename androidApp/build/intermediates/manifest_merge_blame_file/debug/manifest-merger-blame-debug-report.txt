@@ -1,0 +1,54 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.rob.lights.androidApp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->/Users/roberto/AndroidStudioProjects/Lights/androidApp/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/roberto/AndroidStudioProjects/Lights/androidApp/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->[:shared] /Users/roberto/AndroidStudioProjects/Lights/shared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-67
+11-->[:shared] /Users/roberto/AndroidStudioProjects/Lights/shared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-64
+12
+13    <application
+13-->/Users/roberto/AndroidStudioProjects/Lights/androidApp/src/main/AndroidManifest.xml:4:5-15:19
+14        android:allowBackup="false"
+14-->/Users/roberto/AndroidStudioProjects/Lights/androidApp/src/main/AndroidManifest.xml:5:13-40
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.5.0-alpha01] /Users/roberto/.gradle/caches/transforms-2/files-2.1/a1e400416f92ddaf8891254cf7b58d8c/core-1.5.0-alpha01/AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:extractNativeLibs="false"
+18        android:supportsRtl="true"
+18-->/Users/roberto/AndroidStudioProjects/Lights/androidApp/src/main/AndroidManifest.xml:6:13-39
+19        android:testOnly="true"
+20        android:theme="@style/AppTheme" >
+20-->/Users/roberto/AndroidStudioProjects/Lights/androidApp/src/main/AndroidManifest.xml:7:13-44
+21        <activity android:name="com.rob.lights.androidApp.MainActivity" >
+21-->/Users/roberto/AndroidStudioProjects/Lights/androidApp/src/main/AndroidManifest.xml:8:9-14:20
+21-->/Users/roberto/AndroidStudioProjects/Lights/androidApp/src/main/AndroidManifest.xml:8:19-47
+22            <intent-filter>
+22-->/Users/roberto/AndroidStudioProjects/Lights/androidApp/src/main/AndroidManifest.xml:9:13-13:29
+23                <action android:name="android.intent.action.MAIN" />
+23-->/Users/roberto/AndroidStudioProjects/Lights/androidApp/src/main/AndroidManifest.xml:10:17-68
+23-->/Users/roberto/AndroidStudioProjects/Lights/androidApp/src/main/AndroidManifest.xml:10:25-66
+24
+25                <category android:name="android.intent.category.LAUNCHER" />
+25-->/Users/roberto/AndroidStudioProjects/Lights/androidApp/src/main/AndroidManifest.xml:12:17-76
+25-->/Users/roberto/AndroidStudioProjects/Lights/androidApp/src/main/AndroidManifest.xml:12:27-74
+26            </intent-filter>
+27        </activity>
+28        <activity
+28-->[androidx.ui:ui-tooling:1.0.0-alpha05] /Users/roberto/.gradle/caches/transforms-2/files-2.1/5e41580fc6bd5d822cc994bd9e2665b5/ui-tooling-1.0.0-alpha05/AndroidManifest.xml:25:9-28:79
+29            android:name="androidx.ui.tooling.preview.PreviewActivity"
+29-->[androidx.ui:ui-tooling:1.0.0-alpha05] /Users/roberto/.gradle/caches/transforms-2/files-2.1/5e41580fc6bd5d822cc994bd9e2665b5/ui-tooling-1.0.0-alpha05/AndroidManifest.xml:26:13-71
+30            android:exported="true"
+30-->[androidx.ui:ui-tooling:1.0.0-alpha05] /Users/roberto/.gradle/caches/transforms-2/files-2.1/5e41580fc6bd5d822cc994bd9e2665b5/ui-tooling-1.0.0-alpha05/AndroidManifest.xml:27:13-36
+31            android:theme="@android:style/Theme.Material.Light.NoActionBar" />
+31-->[androidx.ui:ui-tooling:1.0.0-alpha05] /Users/roberto/.gradle/caches/transforms-2/files-2.1/5e41580fc6bd5d822cc994bd9e2665b5/ui-tooling-1.0.0-alpha05/AndroidManifest.xml:28:13-76
+32    </application>
+33
+34</manifest>

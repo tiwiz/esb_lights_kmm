@@ -2,32 +2,26 @@ package com.rob.lights.androidApp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import com.rob.lights.shared.Greeting
-import android.widget.TextView
-import androidx.lifecycle.lifecycleScope
-import com.rob.lights.shared.LightRepository
+import androidx.activity.viewModels
+import androidx.compose.ui.platform.setContent
+import com.rob.lights.androidApp.ui.lightsUi
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 
-fun greet(): String {
-    return Greeting().greeting()
-}
 
+@ExperimentalCoroutinesApi
 class MainActivity : AppCompatActivity() {
 
-    private val repository by lazy {
-        LightRepository()
-    }
+    private val viewModel: LightsViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
-        val tv: TextView = findViewById(R.id.text_view)
-        tv.text = greet()
-
-        lifecycleScope.launchWhenResumed {
-            val lights = repository.getLights()
-            Log.d("TEST", lights.toString())
+        viewModel.state.observe(this) {
+            setContent {
+                lightsUi(it) { viewModel.loadLights() }
+            }
         }
+
+        viewModel.loadLights()
     }
 }
