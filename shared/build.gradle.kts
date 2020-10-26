@@ -17,7 +17,7 @@ repositories {
 }
 kotlin {
     val ktorVersion = "1.4.1"
-    val coroutinesVersion = "1.3.9-native-mt"
+    val coroutinesVersion = "1.3.9-native-mt-2"
 
     android()
     ios {
