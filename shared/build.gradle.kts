@@ -17,7 +17,7 @@ repositories {
 }
 kotlin {
     val ktorVersion = "1.4.1"
-    val coroutinesVersion = "1.3.9-native-mt-2"
+    val coroutinesVersion = "1.3.9-native-mt"
 
     android()
     ios {
@@ -33,7 +33,7 @@ kotlin {
                 implementation("io.ktor:ktor-client-core:$ktorVersion")
                 implementation("io.ktor:ktor-client-serialization:$ktorVersion")
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion")
-                implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.0.0")
+                implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.0.0-RC")
             }
         }
         val commonTest by getting {
