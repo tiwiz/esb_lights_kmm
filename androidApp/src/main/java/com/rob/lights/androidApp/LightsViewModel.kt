@@ -30,10 +30,8 @@ class LightsViewModel : ViewModel() {
             try {
                 val lights = repository.getLights()
                 _state.postValue(Lce.Success(lights))
-                println("SUCCESS")
             } catch(e: Exception) {
                 _state.postValue(Lce.Error(e))
-                println("Error: ${e.message}")
             }
         }
     }
